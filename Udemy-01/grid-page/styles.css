@@ -1,0 +1,77 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#website{
+    margin: 0px;
+    padding: 0px;
+}
+
+#website{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    width: 75%;
+    height: 1000px;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+    gap: 5px;
+    justify-content: center;
+}
+
+#cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/6;
+    background-color: #0000ff;
+    color: #fff;
+    border: 5px solid #ff0000;
+}
+
+#menu{
+    line-height: 70px;
+    grid-column: 1/6;
+    background-color: #add8e6;
+    color: #000000;
+    border: 5px solid #008000;
+}
+
+#menu ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+}
+
+#menu ul a{
+    text-decoration: none;
+}
+
+#contenido{
+    display: grid;
+    grid-column: 1/5;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+    background-color: #eee;
+    border: 5px solid #555;
+}
+
+#contenido article{
+    background-color: #ccc;
+    border: 1px solid #555;
+}
+
+#lateral{
+    grid-column: 5/6;
+    background-color: #ffa500;
+    border: 5px solid #800080;
+}
+
+#pie-pagina{
+    grid-column: 1/6;
+    background-color: #000000;
+    color: #fff;
+    border: 5px solid rgb(55, 163, 212);
+}
